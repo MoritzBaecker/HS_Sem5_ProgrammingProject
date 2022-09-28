@@ -40,9 +40,9 @@ def getMovieDescription(movie_index):
         print("Error: Movie doesn't exist.")
     print(current_movie_title)
 
+    #Get the description of movie title
     description = ""
     if current_movie_title != "":
-        #Get the description of movie title
         movie = Movie()
         try:
             description = movie.search(current_movie_title)[0].overview
