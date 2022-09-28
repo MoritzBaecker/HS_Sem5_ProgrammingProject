@@ -16,6 +16,12 @@ api = Api(app)
 def get_movies():
     return getListOfMovies()
 
+@app.route('/movie', methods = ['POST'])
+def get_movie():
+    requestedIndex = request.form['movieindex']
+    print(requestedIndex)
+    return getMovie(requestedIndex)
+
 
 @app.route('/recommendation')
 def get_recommendation():
