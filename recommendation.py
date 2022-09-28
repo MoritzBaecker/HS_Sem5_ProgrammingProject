@@ -1,5 +1,3 @@
-import csv
-
 import pandas
 import json
 from tmdbv3api import TMDb, Movie
