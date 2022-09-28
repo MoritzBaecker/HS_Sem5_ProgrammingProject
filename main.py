@@ -22,6 +22,10 @@ def get_movie():
     print(requestedIndex)
     return getMovie(requestedIndex)
 
+@app.route('/movie_description', methods = ['POST'])
+def get_movie_description():
+    requestedIndex = request.form['movieindex']
+    return getMovieDescription(requestedIndex)
 
 @app.route('/recommendation')
 def get_recommendation():
