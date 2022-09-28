@@ -12,7 +12,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-@app.route('/movies')
+@app.route('/movies', methods = ['POST', 'GET'])
 def get_movies():
     return getListOfMovies()
 
